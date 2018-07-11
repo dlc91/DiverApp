@@ -10,6 +10,7 @@ export class UserComponent
 {
 	public user:User;
 	public users:Array<User>;
+	public columns:string[];
 
 	constructor()
 	{
@@ -21,7 +22,7 @@ export class UserComponent
 
 	ngOnInit()
 	{
-		
+		this.columns=["Name","Last Name","Mail","Role"];
 	}
 
 }
