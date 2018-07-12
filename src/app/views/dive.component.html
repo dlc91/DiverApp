@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>Listado de Inmersiones</h3>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th *ngFor="let col of columns">
+                {{col}}
+            </th>
+          </tr>
+        </thead>
+        <tbody>       
+            <tr *ngFor="let dive of dives">
+                <td>{{ dive.country }}</td>
+                <td>{{ dive.city }}</td>
+                <td>{{ dive.date }}</td>
+            </tr>   
+        </tbody>
+      </table>
+    </div>   

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-//import { Observable } from 'rxjs/observable';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,6 +11,7 @@ export class UserService {
 
   getAllUsers(): Observable<User[]> {
     return this.http.get<User[]>('http://localhost:8000/api/users');
+    
   }
 
  

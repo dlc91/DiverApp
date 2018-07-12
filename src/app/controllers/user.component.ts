@@ -22,7 +22,7 @@ export class UserComponent
 
 	ngOnInit()
 	{
-		this.columns=["Name","Last Name","Mail","Role"];
+		this.columns=["Name","Last Name","Mail","Roler"];
 	}
 
 }
